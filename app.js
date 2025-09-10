@@ -17,6 +17,7 @@ function listado(){// funcion de listado dimanico
     let nuevoItem = document.createElement('li');// Crea un elemento li
     nuevoItem.textContent = nombreDeAmigo;// Añade texto al nuevo item
     nombre.appendChild(nuevoItem);// Agrega el nuevo item a la lista
+    return;
 }
 
 function limpiarIndex(){// Limpiar el campo de entrada:
@@ -41,14 +42,13 @@ function agregarAmigo(){// Desarrolla una función, que permita al usuario ingre
             console.log("longitud vector: " + conteo);// visualizacion de la domesion de vector de lista
             
             limpiarIndex();// limpiar el campo de ingreso de dato
-            listado();// agragar dato al listado dimanico
+            listado();// agragar dato al listado dimanico 
             
-            return;
-        } 
+        }
+    return; 
 }
 
 function sortearAmigo(){// funcion de sorteo de amigo aplicado al boton
-
      if (amigos == ''){
         alert('¡La lista de amigos está vacía!');// alerta de dato vacio
 
@@ -60,5 +60,6 @@ function sortearAmigo(){// funcion de sorteo de amigo aplicado al boton
         consulta = numeroRandom -1;// operacion de para posicion del vector inicio "0"
         console.log("numero de ganador: " + consulta); // viasualizacion del numero ganador 
         console.log("nombre ganador: " + amigos[consulta]);//Obtener el nombre sorteado:
-    }      
+    }
+    return;      
 }
